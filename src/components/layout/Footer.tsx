@@ -19,7 +19,9 @@ export const Footer = ({ onSectionChange }: FooterProps) => {
             <ul className="space-y-2 text-primary-lighter">
               <li><button onClick={() => onSectionChange('about')} className="hover:text-accent transition-smooth">About Us</button></li>
               <li><button onClick={() => onSectionChange('services')} className="hover:text-accent transition-smooth">Services</button></li>
-              <li><button onClick={() => onSectionChange('ministries')} className="hover:text-accent transition-smooth">Ministries</button></li>
+              <li><button onClick={() => onSectionChange('sermons')} className="hover:text-accent transition-smooth">Sermons</button></li>
+              <li><button onClick={() => onSectionChange('deliverance')} className="hover:text-accent transition-smooth">Deliverance</button></li>
+              <li><button onClick={() => onSectionChange('giving')} className="hover:text-accent transition-smooth">Giving</button></li>
               <li><button onClick={() => onSectionChange('contact')} className="hover:text-accent transition-smooth">Contact</button></li>
             </ul>
           </div>

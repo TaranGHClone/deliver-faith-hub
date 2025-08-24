@@ -40,14 +40,20 @@ export const ContactSection = () => {
         </div>
         
         <div>
-          <h3 className="text-2xl font-semibold text-card-foreground mb-6">Send a Message</h3>
+          <h3 className="text-2xl font-semibold text-card-foreground mb-6">Send a Message / Prayer Request</h3>
           <div className="space-y-4">
             <Input placeholder="Your Name" />
             <Input type="email" placeholder="Your Email" />
-            <Textarea placeholder="Your Message" rows={4} />
-            <Button className="w-full">
-              Send Message
-            </Button>
+            <Input placeholder="Phone Number (Optional)" />
+            <Textarea placeholder="Your Message or Prayer Request" rows={4} />
+            <div className="flex gap-2">
+              <Button className="flex-1">
+                Send Message
+              </Button>
+              <Button variant="accent" className="flex-1">
+                Prayer Request
+              </Button>
+            </div>
           </div>
         </div>
       </div>

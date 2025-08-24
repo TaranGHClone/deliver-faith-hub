@@ -8,6 +8,11 @@ import { ServicesSection } from '@/components/sections/ServicesSection';
 import { MinistriesSection } from '@/components/sections/MinistriesSection';
 import { EventsSection } from '@/components/sections/EventsSection';
 import { ContactSection } from '@/components/sections/ContactSection';
+import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
+import { GallerySection } from '@/components/sections/GallerySection';
+import { DeliveranceSection } from '@/components/sections/DeliveranceSection';
+import { SermonsSection } from '@/components/sections/SermonsSection';
+import { DonationSection } from '@/components/sections/DonationSection';
 import { Footer } from '@/components/layout/Footer';
 
 const DeliveranceChurch = () => {
@@ -17,8 +22,13 @@ const DeliveranceChurch = () => {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'services', label: 'Services' },
+    { id: 'sermons', label: 'Sermons' },
     { id: 'ministries', label: 'Ministries' },
+    { id: 'deliverance', label: 'Deliverance' },
     { id: 'events', label: 'Events' },
+    { id: 'gallery', label: 'Gallery' },
+    { id: 'testimonies', label: 'Testimonies' },
+    { id: 'giving', label: 'Giving' },
     { id: 'contact', label: 'Contact' }
   ];
 
@@ -36,10 +46,20 @@ const DeliveranceChurch = () => {
         return <AboutSection />;
       case 'services':
         return <ServicesSection />;
+      case 'sermons':
+        return <SermonsSection />;
       case 'ministries':
         return <MinistriesSection />;
+      case 'deliverance':
+        return <DeliveranceSection />;
       case 'events':
         return <EventsSection />;
+      case 'gallery':
+        return <GallerySection />;
+      case 'testimonies':
+        return <TestimonialsSection />;
+      case 'giving':
+        return <DonationSection />;
       case 'contact':
         return <ContactSection />;
       default:
